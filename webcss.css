@@ -1,0 +1,246 @@
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #333;
+}
+a {
+    text-decoration: none;
+}
+img {
+    display: block;
+    max-width: 400px;
+    max-height: 400px;
+}
+.inner {
+    width: 1500px;
+    margin: 0 auto;
+    position: relative;
+    background: rgb(195, 231, 241);
+}
+header{
+    width: 100%;
+    position: absolute;
+    padding: auto;
+    top: 0;
+    z-index: 9;
+    background-color: #F6F5F0;
+    border-bottom: 1px solid #c8c8c8;
+}
+header .inner {
+    height: 120px;
+}
+header .logo {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.logoimage {
+    width: 80px;
+    height: 80px;
+}
+.sub-menu {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    display: flex;
+    background: lightgreen;
+}
+.sub-menu ul.menu {
+    font-family: Arial, sans-serif;
+    display: flex;
+    list-style: none;
+}
+.sub-menu ul.sub-menu li {
+    padding: auto;
+    position: relative;
+}
+.sub-menu ul.sub-menu li a {
+    padding: 11px 16px;
+    display: block;
+    font-size: 13px;
+    color: #656565;
+}
+.sub-menu ul.sub-menu li a:hover {
+    color: black;
+}
+.sub-menu .search {
+    position: relative;
+    height: 34px;
+    margin: auto;
+}
+.sub-menu .search input {
+    width: 190px;
+    height: inherit;
+    padding: 4px 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+    background-color: #fff;
+    color: #777;
+    font-size: 12px;
+}
+.sub-menu .search .material-icons {
+    height: 24px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 5px;
+    margin: auto;
+}
+.main-menu {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+}
+.main-menu .item .item-name {
+    padding: 10px 10px 34px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+.main-menu .item:hover .item-name {
+    background-color: #2C2A29;
+    color: #669900;
+    border-radius: 6px 6px 0 0;
+}
+.main-menu .item .item-contents {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    display: none;
+}
+.main-menu .item:hover .item-contents {
+    display: -moz-box;
+}
+.main-menu .item .item-contents .contents-menu {
+    color: #2C2A29;
+}
+.main-menu .item .item-contents .contents-menu > ul{
+    padding: 20px 0;
+    display: fiex;
+}
+.main-menu .item .item-contents .contents-menu > ul > li{
+    width: 220px;
+}
+.main-menu .item .item-contents .contents-menu > ul > li h4{
+    padding: 3px 0 12px 0;
+    font-size: 14px;
+    color: #fff;
+}
+.main-menu .item .item-contents .contents-menu > ul > li ul li{
+    padding: 5px 0;
+    font-size: 12px;
+    color: #999;
+    cursor: pointer;
+}
+.main-menu .item .item-contents .contents-menu > ul > li ul li:hover{
+    color: #669900;
+}
+.main-menu .item .item-contents .contents-texture {
+    padding: 26px 0;
+    font-size: 12px;
+    background-image: url("..images/main_menu_pattern.jpg");
+}
+.main-menu .item .item-contents .contents-texture h4 {
+    color: #999;
+    font-weight: 900;
+}
+.main-menu .item .item-contents .contents-texture p {
+    color: #64a70b;
+    margin: 4px 0 14px;
+}
+.btn {
+    width: 130px;
+    padding: 10px;
+    border: 2px solid #333;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: block;
+    transition: 4s;
+}
+.btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+.visual {
+    margin-top: 120px;
+    background-image: url("..image/visual_bg.jpg");
+    background-position: center;
+}
+.visual .inner {
+    height: 646px;
+    position: relative;
+}
+.visual .title {
+    position: absolute;
+    width: 1000px;
+    height: 500px;
+    top: 200px;
+    left: 120px;
+}
+.visual .title .btn {
+    position: absolute;
+    top: 259px;
+    left: 173px;
+}
+.visual .cup1-image {
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    bottom: 100px;
+    right: 480px;
+}
+.visual .cup1-text {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    top: 500px;
+    right: 800px;
+}
+.visual .cup2-image {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    bottom: 480px;
+    right: 962px;
+}
+.visual .cup2-text {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 321px;
+    right: 600px;
+}
+.visual .spoon {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: 100px;
+    left: 475px;
+}
+header .badges {
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    top: 132px;
+    right: 12px;
+}
+header .badges .badge {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,.15);
+    cursor: pointer;
+}
